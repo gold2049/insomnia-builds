@@ -1,4 +1,4 @@
 worker: node bot.js
-worker: node i
-worker: node discord.js install
+worker: npm i
+worker: npm discord.js i
 worker: node . 
