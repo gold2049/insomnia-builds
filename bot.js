@@ -1,6 +1,11 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-bot.login('Mzg1NDg5NzIyNjMxMjU4MTIy.DQSJeA.vf5MvG52yTz5a7_yy5GqSanR9uQ');
-
 // this must be this way
 client.login(process.env.BOT_TOKEN);
+ 
+// Comando Ajuda
+bot.on('message',message => {
+    if (message.content.startsWith('>help')){
+        message.author.send('```Olá TENNO, você acabou de acorda da CRYOGÊNESYS?  Já sei, o ORDIS não lhe ensinou como operar essa máquina... É muito simples, basta digitar ">+ nome da arma ou warframe tudo junto". Exemplo: :>orthos.Caso a build que você procure  não tenha, contate o administrador! ou envie a sua. OBS: este bot ainda esta em desenvolvimento...```');
+    }
+});
